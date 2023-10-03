@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Palanquin:wght@300;400;500;600;700&display=swap');
+
+/* Fuente Cairo para títulos, header y footer */
+/* Fuente Palanquin para párrafos e información */
+
+/* HEADER */
+.colorAyuda{
+    background-color: rgb(144, 71, 71);
+}
+.colorAyudaDos{
+    background-color: rgb(255, 255, 255);
+}
+.fondoBody{
+    height: 400px;
+    background-image: url(../assets/img/tituloindex.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* HEADER */
+.colorHeader{
+    background-color: #0eac22;
+}
+.logoHeader{
+    width: 50px;
+}
+.fontCairoHeader{
+    font-family: 'Cairo';
+    font-weight: 700;
+}
+
+/* MAIN */
+.fontCairoMain{
+    font-family: 'Cairo';
+    font-weight: 700;
+}
+.fontPanlanquinMain{
+    font-family: 'Palanquin';
+    font-weight: 00;
+}
+.tarjeta{
+    background-color: rgb(231, 231, 231);
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 75vw;
+}
+.textoUbicacionUno{
+    text-align: right;
+    margin: 25px;
+}
+.textoUbicacionDos{
+    text-align: left;
+    margin: 25px;
+}
+.imgTarjeta{
+    width: 100%;
+    height: 250px;
+}
+.opiniones{
+    border: 1px solid gray;
+    background-color: rgb(242, 242, 242);
+    border-radius: 20px;
+}
+.contenedorImgOpinion{
+    display: flex;
+    justify-content: center;
+}
+.imgOpinion{
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/* FOOTER */
+.colorFooter{
+    background-color: #6c4633d1;
+}
+.fontCairoFooterTitulo{
+    font-family: 'Cairo';
+    font-size: 1.75rem;
+    color: #fafafa;
+    font-weight: 700;
+}
+.fontCairoFooterLink{
+    font-family: 'Cairo';
+    color: #fafafa !important;
+    font-weight: 600;
+}
+.bordeFooter{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-right: 1px solid #FAFAFA;
+}
+.linkFooter{
+    list-style: none;
+    padding: 0;
+}
+.linkNav{
+    text-decoration: none;
+    color: black;
+}
+.margenRedes{
+    margin-left: 40px;
+}
+.centrarMobile{
+    display: inline-block
+}
+.iconRedes{
+    color: #fafafa;
+}
+.colorIconUbi{
+    color: rgb(209, 0, 0);
+}
+
+@media screen and (max-width:576px){
+    /* MQ-MAIN-INDEX */
+    .tarjeta{
+        width: initial;
+    }
+    .textoUbicacionUno{
+        text-align: center;
+    }
+    .textoUbicacionDos{
+        text-align: center;
+    }
+    .imgTarjeta{
+        height: initial;
+    }
+
+
+    /* MQ-FOOTER */
+    .centrarMobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .margenRedes{
+        margin-left: initial;
+    }
+    .bordeFooter{
+        margin-top: initial;
+        margin-bottom: initial;
+        border-right: initial;
+        border-bottom: 1px solid #fafafa;
+        
+    }
+}

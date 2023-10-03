@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Palanquin:wght@300;400;500;600;700&display=swap');
+
+/* Fuente Cairo para títulos, header y footer */
+/* Fuente Palanquin para párrafos e información */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+.header{
+    background-color: rgb(51, 207, 64);
+    height: 75px;
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.contenedorImg{
+    height: 100%;
+    margin-right: 10px;
+}
+.img{
+    /* background-color: rgb(42, 132, 200);  */
+    height: 100%;
+}
+.contenedorNombreEmpresa{
+    /* background-color: brown;  */
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    font-family: 'Cairo';
+    font-weight: 800;
+}
+.listaNav{
+    /* background-color: beige; */
+    list-style-type: none;
+    display: flex;
+}
+.listaItemNav{
+    /* background-color: blue; */
+    margin-right: 20px;
+}
+.linkNav{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Cairo';
+    font-weight: 500;
+    border-bottom: 1px solid black;
+}
+
+/* MAIN */
+
+.main{
+    background-color: rgba(213, 255, 207, 0.474);
+}
+.tituloIndex{
+    background-image: url(../assets/img/tituloindex.jpg);
+    height: 400px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 3rem;
+    font-family: 'Cairo';
+}
+.tarjetaIndexUno{
+    background-color: rgba(91, 91, 91, 0.211);
+    display: flex;
+    height: 350px;
+    width: auto;
+    padding: 10px;
+    margin: 20px 35px;
+    border-radius: 10px;
+}
+.contenedorImgTarjetaUno{
+    width: 40%;
+    padding: 10px;
+}
+.imgTarjetaUno{
+    width: 100%;
+    height: 100%;
+}
+.infoTarjetaUno{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-family: 'Palanquin';
+    width: 60%;
+}
+.infoTarjetaUno h2{
+    font-weight: 500;
+}
+.infoTarjetaUno p{
+    font-weight: 300;
+    text-align: right;   
+}
+
+
+
+.tarjetaIndexDos{
+    background-color: rgba(91, 91, 91, 0.211);
+    display: flex;
+    flex-direction: row-reverse;
+    height: 350px;
+    width: auto;
+    padding: 10px;
+    margin: 20px 35px;
+    border-radius: 10px;
+}
+.contenedorImgTarjetaDos{
+    width: 40%;
+    padding: 10px;
+}
+.imgTarjetaDos{
+    width: 100%;
+    height: 100%;
+}
+.infoTarjetaDos{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-family: 'Palanquin';
+    width: 60%;
+}
+.infoTarjetaDos h2{
+    font-weight: 500;
+}
+.infoTarjetaDos p{
+    font-weight: 300;
+    text-align: left;   
+}
+/* FOOTER */
+
+.footer{
+    background-color: lightskyblue;
+}
+
