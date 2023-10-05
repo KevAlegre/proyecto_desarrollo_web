@@ -36,7 +36,7 @@
 }
 .fontPanlanquinMain{
     font-family: 'Palanquin';
-    font-weight: 00;
+    font-weight: 500;
 }
 .tarjeta{
     background-color: rgb(231, 231, 231);
@@ -71,6 +71,20 @@
     border-radius: 50%;
     aspect-ratio: 1/1;
     object-fit: cover;
+}
+
+/* MAIN - DESTINOS */
+.tarjetaCarrusel{
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 5px;
+    width: 75%;
+    margin: 0 auto;
+}
+.imgCarrusel{
+    object-fit: cover; 
+    border-radius: 15px;
+    max-height: 525px;
 }
 
 /* FOOTER */
