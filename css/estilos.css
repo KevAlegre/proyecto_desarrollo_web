@@ -3,6 +3,16 @@
 /* Fuente Cairo para títulos, header y footer */
 /* Fuente Palanquin para párrafos e información */
 
+/* Colores a usar
+#d3dee0 (verde)
+#5bc3b3 (verde clarito)
+#25457e (azul oscuro)
+#1180d0 (azul claro)
+#57bceb (celeste)
+#b6e5f5 (celeste claro)
+#f2b47a (naranja claro)
+#453a26 (marroncito claro)
+*/
 .colorAyuda{
     background-color: rgb(144, 71, 71);
 }
@@ -16,7 +26,6 @@
     background-size: cover;
     background-attachment: fixed;
 }
-
 /* HEADER */
 .colorHeader{
     background-color: #0eac22;
@@ -28,7 +37,6 @@
     font-family: 'Cairo';
     font-weight: 700;
 }
-
 /* MAIN */
 .fontCairoMain{
     font-family: 'Cairo';
@@ -72,21 +80,47 @@
     aspect-ratio: 1/1;
     object-fit: cover;
 }
-
 /* MAIN - DESTINOS */
 .tarjetaCarrusel{
+    background-color: rgba(210, 210, 210, 0.212);
     border: 1px solid gray;
     border-radius: 15px;
     padding: 5px;
     width: 75%;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 .imgCarrusel{
     object-fit: cover; 
     border-radius: 15px;
     max-height: 525px;
 }
-
+.imgEstirar{
+    height: 525px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+/* MAIN - SERVICIOS */
+.tarjetaServ{
+    background-color: rgba(227, 227, 227, 0.179);
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+.contenedorImgServ{
+    width: 250px;
+    height: 250px;
+}
+.imgServ{
+    width: 100%;
+    height: 185px;
+    border-radius: 15px;
+    object-fit: content;
+}
+/* MAIN - CONTACTO */
+.contenedorForm{
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: rgba(225, 225, 225, 0.494);
+}
 /* FOOTER */
 .colorFooter{
     background-color: #6c4633d1;
@@ -127,7 +161,6 @@
 .colorIconUbi{
     color: rgb(209, 0, 0);
 }
-
 @media screen and (max-width:576px){
     /* MQ-MAIN-INDEX */
     .tarjeta{
@@ -142,8 +175,20 @@
     .imgTarjeta{
         height: initial;
     }
-
-
+    /* MQ-MAIN-DESTINOS */
+    .tarjetaCarrusel{
+        width: 85%;
+    }
+    .imgCarrusel{
+        max-height: 230px;
+    }
+    .imgEstirar{
+        height: 230px;
+    }
+    /* MQ-MAIN-SERVICIOS */
+    .imgServ{
+        height: initial;
+    }
     /* MQ-FOOTER */
     .centrarMobile{
         display: flex;
@@ -158,6 +203,5 @@
         margin-bottom: initial;
         border-right: initial;
         border-bottom: 1px solid #fafafa;
-        
     }
 }
