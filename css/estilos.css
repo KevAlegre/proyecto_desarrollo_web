@@ -19,16 +19,9 @@
 .colorAyudaDos{
     background-color: rgb(255, 255, 255);
 }
-.fondoBody{
-    height: 400px;
-    background-image: url(../assets/img/tituloindex.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
 /* HEADER */
 .colorHeader{
-    background-color: #0eac22;
+    background-color: #3535357d;
 }
 .logoHeader{
     width: 50px;
@@ -37,7 +30,22 @@
     font-family: 'Cairo';
     font-weight: 700;
 }
-/* MAIN */
+/* MAIN - INDEX*/
+.contenidoPrincipal{
+    background-color: rgb(235, 235, 235);
+}
+.bannerPrincipal{
+    background-color: coral;
+    display: flex;
+    height: 100vh;
+}
+.imgBanner{
+    height: 100%;
+    width: 100%;
+}
+.carruselBanner{
+    display: none;
+}
 .fontCairoMain{
     font-family: 'Cairo';
     font-weight: 700;
