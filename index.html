@@ -13,8 +13,8 @@
         <header class="fontCairoHeader position-fixed w-100">
             <nav class="navbar navbar-expand-lg colorHeader">
                 <div class="container-fluid">
-                    <a class="navbar-brand " href="#">
-                        <img src="./assets/img/Icon.png" alt="Logo" class="d-inline-block align-text-center logoHeader">
+                    <a class="navbar-brand letrasBlancas" href="#">
+                        <img src="./assets/img/icon.png" alt="Logo" class="d-inline-block align-text-center logoHeader">
                         Hoy Viajo Yo!
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,30 +22,42 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div class="navbar-nav ">
-                            <a class="nav-link text-center active" aria-current="page" href="#">Inicio</a>
-                            <a class="nav-link text-center" href="./pages/nosotros.html">Nosotros</a>
-                            <a class="nav-link text-center" href="./pages/destinos.html">Destinos</a>
-                            <a class="nav-link text-center" href="./pages/servicios.html">Servicios</a>
-                            <a class="nav-link text-center" href="./pages/contacto.html">Contáctanos!</a>
+                            <a class="nav-link text-center pagActiva letrasBlancas" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link text-center letrasBlancas" href="./pages/nosotros.html">Nosotros</a>
+                            <a class="nav-link text-center letrasBlancas" href="./pages/destinos.html">Destinos</a>
+                            <a class="nav-link text-center letrasBlancas" href="./pages/servicios.html">Servicios</a>
+                            <a class="nav-link text-center letrasBlancas" href="./pages/contacto.html">Contáctanos!</a>
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
-        <main>
+        <main class="">
+            <div class="carousel slide carruselBanner" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="../Proyecto Final/assets/img/banner/banner1.jpg" class="d-block imgBanner" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="../Proyecto Final/assets/img/banner/banner2.jpg" class="d-block imgBanner" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="../Proyecto Final/assets/img/banner/banner3.jpg" class="d-block imgBanner" alt="...">
+                  </div>
+                </div>
+              </div>
             <section class="bannerPrincipal">
-                <h1 class="text-center fontCairoMain position-absolute top-50">SI ESTAS DESEANDO REALIZAR UN VIAJE, ¡YA NO TENES EXCUSA! MIRÁ NUESTROS DESTINOS Y DECÍ HOY VIAJO YO!</h1>
-                <div class="col-sm-12 col-md-4">
-                    <img class="imgBanner" src="./assets/img/banner/banner12.jpg" alt="">
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <img class="imgBanner" src="./assets/img/banner/banner2.jpg" alt="">
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <img class="imgBanner" src="./assets/img/banner/banner3.jpg" alt="">
-                </div>
-            </section>
-            
+              <div class="col-md-4">
+                <img class="imgBanner" src="../Proyecto Final/assets/img/banner/banner1.jpg" alt="">
+              </div>
+              <div class="col-md-4">
+                <img class="imgBanner" src="../Proyecto Final/assets/img/banner/banner2.jpg" alt="">
+              </div>
+              <div class="col-md-4">
+               <img class="imgBanner" src="../Proyecto Final/assets/img/banner/banner3.jpg" alt="">
+              </div>
+            </section>   
+            <h1 class="position-absolute top-50 text-center">SI ESTAS DESEANDO REALIZAR UN VIAJE, ¡YA NO TENES EXCUSA! MIRÁ NUESTROS DESTINOS Y DECÍ HOY VIAJO YO!</h1>
             <section class="container">
                 <h3 class="fontCairoMain text-center m-5">¡NO DESAPROVECHES LA OPORTUNIDAD Y HACÉ EL VIAJE QUE TANTO QUERÉS!</h3>
                 <section class="tarjeta ms-auto mb-3">
@@ -63,7 +75,7 @@
                 <section class="tarjeta me-auto mt-3 mb-3">
                     <div class="row">
                         <div class="col-sm-12 col-md-4 ">
-                            <img class="rounded imgTarjeta" src="./assets/img/mar_del_plata.jpg" alt="Imagen ilustrativa de Mar del Plata">
+                            <img class="rounded imgTarjeta" src="./assets/img/mdq_3.jpg" alt="Imagen ilustrativa de Mar del Plata">
                         </div>
                         <div class="col-sm-12 col-md-8">
                         <h2 class="textoUbicacionDos fontCairoMain">Mar del Plata</h2>
@@ -79,7 +91,7 @@
                             <p class="textoUbicacionUno fontPanlanquinMain">¿Lo tuyo es la tranquiliad? ¿Te gusta admirar el paisaje? ¿Pensás que la naturaleza lo es todo para vos? ¡Entonces no lo pienses más!, vení a visitar el humedal más hermoso del mundo en Corrientes.</p>
                         </div>
                         <div class="col-sm-12 col-md-4 ">
-                            <img class="rounded imgTarjeta" src="./assets/img/esteros_ibera.avif" alt="Imagen ilustrativa de los Esteros del Iberá">
+                            <img class="rounded imgTarjeta" src="./assets/img/esteros3.avif" alt="Imagen ilustrativa de los Esteros del Iberá">
                         </div>
                     </div>
                 </section>

@@ -19,7 +19,16 @@
 .colorAyudaDos{
     background-color: rgb(255, 255, 255);
 }
+.letrasBlancas{
+    color: #FAFAFA !important;
+}
+.pagActiva{
+    color: #67a6ff !important;
+}
 /* HEADER */
+header{
+    z-index: 1;
+}
 .colorHeader{
     background-color: #3535357d;
 }
@@ -35,7 +44,6 @@
     background-color: rgb(235, 235, 235);
 }
 .bannerPrincipal{
-    background-color: coral;
     display: flex;
     height: 100vh;
 }
@@ -169,8 +177,18 @@
 .colorIconUbi{
     color: rgb(209, 0, 0);
 }
-@media screen and (max-width:576px){
+@media screen and (max-width:750px){
     /* MQ-MAIN-INDEX */
+    .bannerPrincipal{
+        display: none;
+    }
+    .carruselBanner{
+        display: initial;
+        z-index: 0;
+    }
+    .imgBanner{
+        max-height: 100vh;
+    }
     .tarjeta{
         width: initial;
     }
