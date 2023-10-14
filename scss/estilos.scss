@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Palanquin:wght@300;400;500;600;700&display=swap');
+@import "variables.scss";
+@import "utilidades.scss";
+@import "header.scss";
+@import "footer.scss";
+$color-blanco: #fafafa;
+$color-ayuda: rgb(208, 144, 67);
+/* Colores a usar
+#d3dee0 (verde)
+#5bc3b3 (verde clarito)
+#25457e (azul oscuro)
+#1180d0 (azul claro)
+#57bceb (celeste)
+#b6e5f5 (celeste claro)
+#f2b47a (naranja claro)
+#453a26 (marroncito claro)
+*/
+.colorAyuda{
+    background-color: $color-ayuda;
+}
+.colorAyudaDos{
+    background-color: rgb(255, 255, 255);
+}
+.letrasBlancas{
+    color: $color-blanco !important;
+}
+.pagActiva{
+    color: #67a6ff !important;
+}
+.fontCairo{
+    font-family: 'Cairo';
+    font-weight: 700;
+}
+.fontPanlanquinMain{
+    font-family: 'Palanquin';
+    font-weight: 500;
+}
+.contenidoPrincipal{ /* Color bg body */
+    background-color: rgb(235, 235, 235);
+}
+.colorFooter{
+    background-color: #6c4633d1;
+}
+.fontCairoFooterTitulo{
+    font-family: 'Cairo';
+    font-size: 1.75rem;
+    color: #fafafa;
+    font-weight: 700;
+}
+.fontCairoFooterLink{
+    font-family: 'Cairo';
+    color: #fafafa !important;
+    font-weight: 600;
+}
+/* MAIN - INDEX*/
+.carruselBanner{
+    display: none;
+}
+.bannerPrincipal{
+    display: flex;
+    height: 100vh;
+    .imgBanner{
+        height: 100%;
+        width: 100%;
+    }
+}
+.tarjeta{
+    background-color: rgb(231, 231, 231);
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 75vw;
+    .textoUbicacionUno{
+        text-align: right;
+        margin: 25px;
+    }
+    .textoUbicacionDos{
+        text-align: left;
+        margin: 25px;
+    }
+    .imgTarjeta{
+        width: 100%;
+        height: 250px;
+    }
+}
+.opiniones{
+    border: 1px solid gray;
+    background-color: rgb(242, 242, 242);
+    border-radius: 20px;
+    .contenedorImgOpinion{
+        display: flex;
+        justify-content: center;
+        .imgOpinion{
+            width: 115px;
+            height: 115px;
+            border-radius: 50%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+    }
+}
+/* MAIN - DESTINOS */
+.tarjetaCarrusel{
+    background-color: rgba(210, 210, 210, 0.212);
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 5px;
+    width: 75%;
+    margin: 15px auto;
+    .imgCarrusel{
+        object-fit: cover; 
+        border-radius: 15px;
+        max-height: 525px;
+    }
+}
+/* MAIN - SERVICIOS */
+.tarjetaServ{
+    background-color: rgba(227, 227, 227, 0.179);
+    border: 1px solid gray;
+    border-radius: 15px;
+    .imgServ{
+        width: 100%;
+        height: 185px;
+        border-radius: 15px;
+        object-fit: content;
+    }
+}
+/* MAIN - CONTACTO */
+.contenedorForm{
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: rgba(225, 225, 225, 0.494);
+}
+@media screen and (max-width:750px){
+    /* MQ-MAIN-INDEX */
+    .bannerPrincipal{
+        display: none;
+    }
+    .carruselBanner{
+        display: initial;
+        z-index: 0;
+        .imgBanner{
+            height: 100vh;
+            width: 100%;
+        }
+    }
+    .tarjeta{
+        width: initial;
+        .textoUbicacionUno{
+            text-align: center;
+        }
+        .textoUbicacionDos{
+            text-align: center;
+        }
+        .imgTarjeta{
+            height: initial;
+        }
+    }
+    /* MQ-MAIN-DESTINOS */
+    .tarjetaCarrusel{
+        width: 85%;
+        .imgCarrusel{
+            max-height: 230px;
+        }
+    }
+    /* MQ-MAIN-SERVICIOS */
+    .imgServ{
+        height: initial;
+    }
+}
