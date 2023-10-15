@@ -1,0 +1,21 @@
+.tarjetaCarrusel{
+    background-color: rgba(210, 210, 210, 0.212);
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 5px;
+    width: 75%;
+    margin: 15px auto;
+    .imgCarrusel{
+        object-fit: cover; 
+        border-radius: 15px;
+        max-height: 525px;
+    }
+}
+@media screen and (max-width:750px){
+    .tarjetaCarrusel{
+        width: 85%;
+        .imgCarrusel{
+            max-height: 230px;
+        }
+    }
+}

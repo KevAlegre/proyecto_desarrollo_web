@@ -1,88 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Palanquin:wght@300;400;500;600;700&display=swap");
-header {
-  z-index: 1;
-}
-header .colorHeader {
-  background-color: rgba(53, 53, 53, 0.4901960784);
-}
-header .logoHeader {
-  width: 50px;
-}
-
-.bordeFooter {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border-right: 1px solid #fafafa;
-}
-
-.linkFooter {
-  list-style: none;
-  padding: 0;
-}
-
-.linkNav {
-  text-decoration: none;
-  color: black;
-}
-
-.margenRedes {
-  margin-left: 40px;
-}
-
-.centrarMobile {
-  display: inline-block;
-}
-
-.iconRedes {
-  color: #fafafa;
-}
-
-.colorIconUbi {
-  color: rgb(209, 0, 0);
-}
-
-@media screen and (max-width: 750px) {
-  .centrarMobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .margenRedes {
-    margin-left: initial;
-  }
-  .bordeFooter {
-    margin-top: initial;
-    margin-bottom: initial;
-    border-right: initial;
-    border-bottom: 1px solid #fafafa;
-  }
-}
-/* Colores a usar
-#d3dee0 (verde)
-#5bc3b3 (verde clarito)
-#25457e (azul oscuro)
-#1180d0 (azul claro)
-#57bceb (celeste)
-#b6e5f5 (celeste claro)
-#f2b47a (naranja claro)
-#453a26 (marroncito claro)
-*/
-.colorAyuda {
-  background-color: rgb(208, 144, 67);
-}
-
-.colorAyudaDos {
-  background-color: rgb(255, 255, 255);
-}
-
-.letrasBlancas {
-  color: #fafafa !important;
-}
-
-.pagActiva {
-  color: #67a6ff !important;
-}
-
 .fontCairo {
   font-family: "Cairo";
   font-weight: 700;
@@ -91,14 +7,6 @@ header .logoHeader {
 .fontPanlanquinMain {
   font-family: "Palanquin";
   font-weight: 500;
-}
-
-.contenidoPrincipal { /* Color bg body */
-  background-color: rgb(235, 235, 235);
-}
-
-.colorFooter {
-  background-color: rgba(108, 70, 51, 0.8196078431);
 }
 
 .fontCairoFooterTitulo {
@@ -114,7 +22,42 @@ header .logoHeader {
   font-weight: 600;
 }
 
-/* MAIN - INDEX*/
+.colorAyuda {
+  background-color: rgb(208, 144, 67);
+}
+
+.letrasBlancas {
+  color: #fafafa !important;
+}
+.letrasBlancas:hover {
+  color: rgb(230, 230, 230) !important;
+}
+
+.pagActiva {
+  color: #5c91db !important;
+}
+.pagActiva:hover {
+  color: #3e80dc !important;
+}
+
+.contenidoPrincipal { /* Color bg body */
+  background-color: rgb(235, 235, 235);
+}
+
+header {
+  z-index: 1;
+}
+header .colorHeader {
+  background-color: rgba(53, 53, 53, 0.4901960784);
+}
+header .logoHeader {
+  width: 50px;
+}
+
+.gradBanner {
+  background-color: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
 .carruselBanner {
   display: none;
 }
@@ -164,43 +107,7 @@ header .logoHeader {
   object-fit: cover;
 }
 
-/* MAIN - DESTINOS */
-.tarjetaCarrusel {
-  background-color: rgba(210, 210, 210, 0.212);
-  border: 1px solid gray;
-  border-radius: 15px;
-  padding: 5px;
-  width: 75%;
-  margin: 15px auto;
-}
-.tarjetaCarrusel .imgCarrusel {
-  object-fit: cover;
-  border-radius: 15px;
-  max-height: 525px;
-}
-
-/* MAIN - SERVICIOS */
-.tarjetaServ {
-  background-color: rgba(227, 227, 227, 0.179);
-  border: 1px solid gray;
-  border-radius: 15px;
-}
-.tarjetaServ .imgServ {
-  width: 100%;
-  height: 185px;
-  border-radius: 15px;
-  object-fit: content;
-}
-
-/* MAIN - CONTACTO */
-.contenedorForm {
-  border: 1px solid gray;
-  border-radius: 15px;
-  background-color: rgba(225, 225, 225, 0.494);
-}
-
 @media screen and (max-width: 750px) {
-  /* MQ-MAIN-INDEX */
   .bannerPrincipal {
     display: none;
   }
@@ -224,16 +131,102 @@ header .logoHeader {
   .tarjeta .imgTarjeta {
     height: initial;
   }
-  /* MQ-MAIN-DESTINOS */
+}
+.tarjetaCarrusel {
+  background-color: rgba(210, 210, 210, 0.212);
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 5px;
+  width: 75%;
+  margin: 15px auto;
+}
+.tarjetaCarrusel .imgCarrusel {
+  object-fit: cover;
+  border-radius: 15px;
+  max-height: 525px;
+}
+
+@media screen and (max-width: 750px) {
   .tarjetaCarrusel {
     width: 85%;
   }
   .tarjetaCarrusel .imgCarrusel {
     max-height: 230px;
   }
-  /* MQ-MAIN-SERVICIOS */
+}
+.tarjetaServ {
+  background-color: rgba(227, 227, 227, 0.179);
+  border: 1px solid gray;
+  border-radius: 15px;
+}
+.tarjetaServ .imgServ {
+  width: 100%;
+  height: 185px;
+  border-radius: 15px;
+  object-fit: content;
+}
+
+@media screen and (max-width: 750px) {
   .imgServ {
     height: initial;
+  }
+}
+.contenedorForm {
+  border: 1px solid gray;
+  border-radius: 15px;
+  background-color: rgba(225, 225, 225, 0.494);
+}
+
+.colorFooter {
+  background-color: rgba(108, 70, 51, 0.8196078431);
+}
+
+.bordeFooter {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-right: 1px solid #fafafa;
+}
+
+.linkFooter {
+  list-style: none;
+  padding: 0;
+}
+
+.linkNav {
+  text-decoration: none;
+  color: black;
+}
+
+.margenRedes {
+  margin-left: 40px;
+}
+
+.centrarMobile {
+  display: inline-block;
+}
+
+.iconRedes {
+  color: #fafafa;
+}
+
+.colorIconUbi {
+  color: rgb(209, 0, 0);
+}
+
+@media screen and (max-width: 750px) {
+  .centrarMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .margenRedes {
+    margin-left: initial;
+  }
+  .bordeFooter {
+    margin-top: initial;
+    margin-bottom: initial;
+    border-right: initial;
+    border-bottom: 1px solid #fafafa;
   }
 }
 

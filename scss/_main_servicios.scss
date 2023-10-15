@@ -1,0 +1,16 @@
+.tarjetaServ{
+    background-color: rgba(227, 227, 227, 0.179);
+    border: 1px solid gray;
+    border-radius: 15px;
+    .imgServ{
+        width: 100%;
+        height: 185px;
+        border-radius: 15px;
+        object-fit: content;
+    }
+}
+@media screen and (max-width:750px){
+    .imgServ{
+        height: initial;
+    }
+}

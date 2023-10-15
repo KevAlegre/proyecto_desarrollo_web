@@ -1,7 +1,10 @@
+.colorFooter{
+    background-color: #6c4633d1;
+}
 .bordeFooter{
     margin-top: 15px;
     margin-bottom: 15px;
-    border-right: 1px solid #fafafa;
+    border-right: 1px solid map-get($mapa-colores , color-blanco);
 }
 .linkFooter{
     list-style: none;
@@ -9,7 +12,7 @@
 }
 .linkNav{
     text-decoration: none;
-    color: black;
+    color: map-get($mapa-colores , color-negro);
 }
 .margenRedes{
     margin-left: 40px;
@@ -36,6 +39,6 @@
         margin-top: initial;
         margin-bottom: initial;
         border-right: initial;
-        border-bottom: 1px solid #fafafa;
+        border-bottom: 1px solid map-get($mapa-colores , color-blanco);
     }
 }

@@ -1,0 +1,75 @@
+.gradBanner{
+    background-color: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+.carruselBanner{
+    display: none;
+}
+.bannerPrincipal{
+    display: flex;
+    height: 100vh;
+    
+    .imgBanner{
+        height: 100%;
+        width: 100%;
+        
+    }
+}
+.tarjeta{
+    background-color: rgb(231, 231, 231);
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 75vw;
+    .textoUbicacionUno{
+        text-align: right;
+        margin: 25px;
+    }
+    .textoUbicacionDos{
+        text-align: left;
+        margin: 25px;
+    }
+    .imgTarjeta{
+        width: 100%;
+        height: 250px;
+    }
+}
+.opiniones{
+    border: 1px solid gray;
+    background-color: rgb(242, 242, 242);
+    border-radius: 20px;
+    .contenedorImgOpinion{
+        display: flex;
+        justify-content: center;
+        .imgOpinion{
+            width: 115px;
+            height: 115px;
+            border-radius: 50%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+    }
+}
+@media screen and (max-width:750px){
+    .bannerPrincipal{
+        display: none;
+    }
+    .carruselBanner{
+        display: initial;
+        z-index: 0;
+        .imgBanner{
+            height: 100vh;
+            width: 100%;
+        }
+    }
+    .tarjeta{
+        width: initial;
+        .textoUbicacionUno{
+            text-align: center;
+        }
+        .textoUbicacionDos{
+            text-align: center;
+        }
+        .imgTarjeta{
+            height: initial;
+        }
+    }
+}
