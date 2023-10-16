@@ -4,15 +4,25 @@
 .letrasBlancas{
     color: map-get($mapa-colores , color-blanco) !important;
     &:hover{
-        color: rgb(230, 230, 230) !important;
+        color: rgb(208, 208, 208) !important;
     }
 }
 .pagActiva{
-    color: #5c91db !important;
+    color: #66BAA8 !important;
     &:hover{
-        color: #3e80dc !important;
+        color: #4D8075 !important;
     }
 }
+.sombraTexto{
+    text-shadow: 0 0 15px black;
+}
+.tituloPag{
+    color: map-get($mapa-colores , color-blanco) !important;
+}
 .contenidoPrincipal{ /* Color bg body */
-    background-color: rgb(235, 235, 235);
+    background-color: #FEF6FF;
+}
+.fondoTarjetas{
+    background-color: #e7e5ec;
+    border-radius: 5px;
 }

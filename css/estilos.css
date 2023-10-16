@@ -30,32 +30,50 @@
   color: #fafafa !important;
 }
 .letrasBlancas:hover {
-  color: rgb(230, 230, 230) !important;
+  color: rgb(208, 208, 208) !important;
 }
 
 .pagActiva {
-  color: #5c91db !important;
+  color: #66BAA8 !important;
 }
 .pagActiva:hover {
-  color: #3e80dc !important;
+  color: #4D8075 !important;
+}
+
+.sombraTexto {
+  text-shadow: 0 0 15px black;
+}
+
+.tituloPag {
+  color: #fafafa !important;
 }
 
 .contenidoPrincipal { /* Color bg body */
-  background-color: rgb(235, 235, 235);
+  background-color: #FEF6FF;
+}
+
+.fondoTarjetas {
+  background-color: #e7e5ec;
+  border-radius: 5px;
 }
 
 header {
-  z-index: 1;
+  z-index: 9;
 }
 header .colorHeader {
-  background-color: rgba(53, 53, 53, 0.4901960784);
+  background-color: rgba(0, 196, 218, 0.1647058824);
 }
 header .logoHeader {
   width: 50px;
 }
 
-.gradBanner {
-  background-color: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+.bannerIndex {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(10, 10, 157, 0.2509803922), rgba(0, 0, 0, 0.5), rgba(11, 10, 157, 0.2509803922)), url(../assets/img/banner/bannerdesk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .carruselBanner {
@@ -72,7 +90,7 @@ header .logoHeader {
 }
 
 .tarjeta {
-  background-color: rgb(231, 231, 231);
+  background-color: rgba(213, 213, 213, 0.1411764706);
   border: 1px solid gray;
   border-radius: 10px;
   width: 75vw;
@@ -92,7 +110,7 @@ header .logoHeader {
 
 .opiniones {
   border: 1px solid gray;
-  background-color: rgb(242, 242, 242);
+  background-color: rgba(213, 213, 213, 0.1411764706);
   border-radius: 20px;
 }
 .opiniones .contenedorImgOpinion {
@@ -108,6 +126,13 @@ header .logoHeader {
 }
 
 @media screen and (max-width: 750px) {
+  .bannerIndex {
+    height: initial;
+    background-image: initial;
+    position: absolute;
+    top: 250px;
+    z-index: 1;
+  }
   .bannerPrincipal {
     display: none;
   }
@@ -171,6 +196,24 @@ header .logoHeader {
     height: initial;
   }
 }
+.bannerNosotros {
+  display: grid;
+  place-items: center;
+  height: 50vh;
+  background-image: linear-gradient(to right, rgba(10, 10, 157, 0.2509803922), rgba(0, 0, 0, 0.5), rgba(11, 10, 157, 0.2509803922)), url(../assets/img/banner/bannernos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 750px) {
+  .bannerIndex {
+    height: initial;
+    background-image: initial;
+    position: absolute;
+    top: 250px;
+    z-index: 1;
+  }
+}
 .contenedorForm {
   border: 1px solid gray;
   border-radius: 15px;
@@ -178,7 +221,7 @@ header .logoHeader {
 }
 
 .colorFooter {
-  background-color: rgba(108, 70, 51, 0.8196078431);
+  background-color: #0B0A9D;
 }
 
 .bordeFooter {
