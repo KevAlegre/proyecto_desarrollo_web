@@ -34,7 +34,7 @@
 }
 
 .pagActiva {
-  color: #66BAA8 !important;
+  color: #007E66 !important;
 }
 .pagActiva:hover {
   color: #4D8075 !important;
@@ -74,7 +74,7 @@ header {
   z-index: 9;
 }
 header .colorHeader {
-  background-color: rgba(0, 196, 218, 0.1647058824);
+  background-color: rgba(0, 196, 218, 0.4352941176);
 }
 header .logoHeader {
   width: 50px;
@@ -84,7 +84,7 @@ header .logoHeader {
   display: grid;
   place-items: center;
   height: 100vh;
-  background-image: linear-gradient(to right, rgba(10, 10, 157, 0.2509803922), rgba(0, 0, 0, 0.5), rgba(11, 10, 157, 0.2509803922)), url(../assets/img/banner/bannerdesk.jpg);
+  background-image: linear-gradient(to right, rgba(10, 10, 157, 0.2509803922), rgba(0, 0, 0, 0.5), rgba(11, 10, 157, 0.2509803922)), url(../assets/img/banner/bannerindex.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -140,14 +140,7 @@ header .logoHeader {
 
 @media screen and (max-width: 750px) {
   .bannerIndex {
-    height: initial;
-    background-image: initial;
-    position: absolute;
-    top: 250px;
-    z-index: 1;
-  }
-  .bannerPrincipal {
-    display: none;
+    background-position: left;
   }
   .carruselBanner {
     display: initial;
@@ -170,8 +163,17 @@ header .logoHeader {
     height: initial;
   }
 }
+.bannerDestino {
+  display: grid;
+  place-items: center;
+  height: 50vh;
+  background-image: linear-gradient(to right, rgba(10, 10, 157, 0.2509803922), rgba(0, 0, 0, 0.5), rgba(11, 10, 157, 0.2509803922)), url(../assets/img/banner/bannerdest.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .tarjetaCarrusel {
-  background-color: rgba(210, 210, 210, 0.212);
+  background-color: rgba(213, 213, 213, 0.1411764706);
   border: 1px solid gray;
   border-radius: 15px;
   padding: 5px;
@@ -185,6 +187,9 @@ header .logoHeader {
 }
 
 @media screen and (max-width: 750px) {
+  .bannerDestino {
+    background-position: center;
+  }
   .tarjetaCarrusel {
     width: 85%;
   }
@@ -192,6 +197,15 @@ header .logoHeader {
     max-height: 230px;
   }
 }
+.bannerServicios {
+  display: grid;
+  place-items: center;
+  height: 50vh;
+  background-image: linear-gradient(to right, rgba(10, 10, 157, 0.2509803922), rgba(0, 0, 0, 0.5), rgba(11, 10, 157, 0.2509803922)), url(../assets/img/banner/bannerserv.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .tarjetaServ {
   background-color: rgba(227, 227, 227, 0.179);
   border: 1px solid gray;
@@ -205,6 +219,9 @@ header .logoHeader {
 }
 
 @media screen and (max-width: 750px) {
+  .bannerServicios {
+    background-position: center;
+  }
   .imgServ {
     height: initial;
   }
@@ -219,12 +236,8 @@ header .logoHeader {
 }
 
 @media screen and (max-width: 750px) {
-  .bannerIndex {
-    height: initial;
+  .bannerNosotros {
     background-position: center;
-    position: absolute;
-    top: 250px;
-    z-index: 1;
   }
 }
 .contenedorForm {

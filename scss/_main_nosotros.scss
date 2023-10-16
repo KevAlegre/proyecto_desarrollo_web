@@ -7,11 +7,7 @@
     background-size: cover;
 }
 @media screen and (max-width:750px){
-    .bannerIndex{
-        height: initial;
+    .bannerNosotros{
         background-position: center;
-        position: absolute;
-        top: 250px;
-        z-index: 1;
     }
 }
