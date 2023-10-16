@@ -4,7 +4,7 @@
   font-weight: 700;
 }
 
-.fontPanlanquinMain {
+.fontPalanquin {
   font-family: "Palanquin";
   font-weight: 500;
 }
@@ -55,6 +55,19 @@
 .fondoTarjetas {
   background-color: #e7e5ec;
   border-radius: 5px;
+}
+
+.senialador {
+  color: #860000 !important;
+}
+
+.linksRandoms {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.linksRandoms:hover {
+  color: rgb(160, 160, 160);
 }
 
 header {
@@ -208,7 +221,7 @@ header .logoHeader {
 @media screen and (max-width: 750px) {
   .bannerIndex {
     height: initial;
-    background-image: initial;
+    background-position: center;
     position: absolute;
     top: 250px;
     z-index: 1;
