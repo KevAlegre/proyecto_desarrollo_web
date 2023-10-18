@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/estilos.css">
         <link rel="icon" href="./favicon.ico">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     </head>
     <body class="contenidoPrincipal">
         <header class="fontCairo position-fixed w-100">
@@ -35,10 +36,10 @@
         <main>
             <h1 class="bannerIndex tituloPag text-center sombraTexto">SI ESTAS DESEANDO REALIZAR UN VIAJE, ¡YA NO TENES EXCUSA! MIRÁ NUESTROS DESTINOS Y DECÍ HOY VIAJO YO!</h1>
             <section class="container">
-                <div class="fondoTarjetas">
+                <div class="fondoTarjetas" data-aos="zoom-out">
                     <h3 class="fontCairo text-center m-5">¡NO DESAPROVECHES LA OPORTUNIDAD Y HACÉ EL VIAJE QUE TANTO QUERÉS!</h3>
                 </div>
-                <section class="tarjeta ms-auto mb-3">
+                <section class="tarjeta ms-auto mb-3" data-aos="fade-right" data-aos-duration="1200">
                     <div class="row">
                         <div class="col-sm-12 col-md-8">
                             <h2 class="textoUbicacionUno fontCairo">Bariloche</h2>
@@ -49,11 +50,11 @@
                         </div>
                     </div>
                 </section>
-                <div class="fondoTarjetas">
-                    <h3 class="fontCairo text-center m-5">¡DISFRUTÁ SIN TANTAS VUELTAS!</h3>
+                <div class="fondoTarjetas" data-aos="zoom-out">
+                    <h3 class="fontCairo text-center m-5"">¡DISFRUTÁ SIN TANTAS VUELTAS!</h3>
                 </div>
 
-                <section class="tarjeta me-auto mt-3 mb-3">
+                <section class="tarjeta me-auto mt-3 mb-3" data-aos="fade-left" data-aos-duration="1200">
                     <div class="row">
                         <div class="col-sm-12 col-md-4 ">
                             <img class="rounded imgTarjeta" src="./assets/img/mdq_3.jpg" alt="Imagen ilustrativa de Mar del Plata, se observa a la playa Bristol.">
@@ -64,10 +65,10 @@
                         </div>
                     </div>
                 </section>
-                <div class="fondoTarjetas">
-                    <h3 class="fontCairo text-center m-5">¡NOSOTROS TE ASESORAMOS EN TODO LO QUE NECESITES!</h3>
+                <div class="fondoTarjetas" data-aos="zoom-out">
+                    <h3 class="fontCairo text-center m-5" >¡NOSOTROS TE ASESORAMOS EN TODO LO QUE NECESITES!</h3>
                 </div>
-                <section class="tarjeta ms-auto mt-3 mb-3">
+                <section class="tarjeta ms-auto mt-3 mb-3" data-aos="fade-right" data-aos-duration="1200">
                     <div class="row">
                         <div class="col-sm-12 col-md-8">
                             <h2 class="textoUbicacionUno fontCairo">Esteros del Iberá</h2>
@@ -79,10 +80,10 @@
                     </div>
                 </section>
                 <!-- CARDS OPINIONES -->
-                <h2 class="fontCairo"> <span class="senialador">|</span> ¡OPINIONES DE NUESTROS CLIENTES!</h2>
+                <h2 class="fontCairo"><span class="senialador">|</span> ¡OPINIONES DE NUESTROS CLIENTES!</h2>
                 <section class="p-5">
                     <div class="row">
-                        <div class="col-sm-2 col-md-3 opiniones">
+                        <div class="col-sm-2 col-md-3 opiniones" data-aos="fade-up">
                             <div class="contenedorImgOpinion">
                                 <img class="imgOpinion" src="./assets/img/user_uno.avif" alt="Foto usuario 1">
                             </div>
@@ -94,7 +95,7 @@
                                 <p class="fontPalanquin f-5 text-end m-0"><strong class="fs-1">"</strong></p>
                             </div>
                         </div>
-                        <div class="col-sm-2 col-md-3 opiniones">
+                        <div class="col-sm-2 col-md-3 opiniones" data-aos="fade-up" data-aos-delay="100">
                             <div class="contenedorImgOpinion">
                                 <img class="imgOpinion" src="./assets/img/user_dos.avif" alt="Foto usuario 2">
                             </div>
@@ -106,7 +107,7 @@
                                 <p class="fontPalanquin f-5 text-end m-0"><strong class="fs-1">"</strong></p>
                             </div>
                         </div>
-                        <div class="col-sm-2 col-md-3 opiniones">
+                        <div class="col-sm-2 col-md-3 opiniones" data-aos="fade-up" data-aos-delay="200">
                             <div class="contenedorImgOpinion">
                                 <img class="imgOpinion" src="./assets/img/user_tres.avif" alt="Foto usuario 3">
                             </div>
@@ -118,7 +119,7 @@
                                 <p class="fontPalanquin f-5 text-end m-0"><strong class="fs-1">"</strong></p>
                             </div>
                         </div>
-                        <div class="col-sm-2 col-md-3 opiniones">
+                        <div class="col-sm-2 col-md-3 opiniones" data-aos="fade-up" data-aos-delay="300">
                             <div class="contenedorImgOpinion">
                                 <img class="imgOpinion" src="./assets/img/user_cuatro.avif" alt="Foto usuario 4">
                             </div>
@@ -197,5 +198,9 @@
             </div>
         </footer>
         <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

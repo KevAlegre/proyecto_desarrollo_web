@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
         <link rel="icon" href="../favicon.ico">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     </head>
     <body class="contenidoPrincipal">
       <header class="fontCairo position-fixed w-100">
@@ -35,7 +36,7 @@
     <main>
         <h1 class="fontCairo bannerDestino tituloPag sombraTexto text-center">SI NO TENÉS DECIDIDO DÓNDE IR, ¡NOSOTROS TE AYUDAMOS!</h1>
         <section class="container">
-          <section class="tarjetaCarrusel">
+          <section class="tarjetaCarrusel" data-aos="zoom-in">
             <h2 class="fontCairo">Opción en la playa</h2>
             <div id="carouselPlaya" class="carousel slide">
                 <div class="carousel-inner">
@@ -62,7 +63,7 @@
                 <p class="fontPalanquin m-3">En Mar del Plata además de poder disfrutar de las playas todo el tiempo que quieras, vas a poder acceder a una gran cantidad de opciones de hospedaje y cadenas de restaurantes. También contarás con una serie de puntos turísticos y excursiones hacia parques acuaticos, paseos en lancha o juegos en kayak para poder disfrutar con tu familia. ¡Incluso podrás ir al famoso casino!</p>
               </div>
         </section>
-        <section class="tarjetaCarrusel">
+        <section class="tarjetaCarrusel" data-aos="zoom-in">
             <h2 class="fontCairo">Opción en las montañas</h2>
             <div id="carouselMontañas" class="carousel slide">
                 <div class="carousel-inner">
@@ -89,7 +90,7 @@
                 <p class="fontPalanquin m-3">Si tenes ganas de pasar un rato de tranquilidad, con unas vistas increíbles o incluso practicando trekking, ¡tenés que visitar el Cerro de los Siete Colores en Jujuy!, donde el cerro se convertirá en tu mejor amigo.</p>
               </div>
         </section>
-        <section class="tarjetaCarrusel">
+        <section class="tarjetaCarrusel" data-aos="zoom-in">
             <h2 class="fontCairo">Opción en la nieve</h2>
             <div id="carouselNieve" class="carousel slide">
                 <div class="carousel-inner">
@@ -113,10 +114,10 @@
                 </button>
               </div>
               <div>
-                <p class="fontPalanquin m-3">No hay nada má lindo que sentarse en en una roca, frente al Río Nahuel Huapi y admirar las genialidades que la naturaleza nos dió. Si buscas respirar un aire totalmente puro, hacer trekking, andar en kayak o simplemente parar en miradores totalmente recomendados, ¡Bariloche es todo lo que buscas!, además de contar con increibles opciones de hospedaje y gastronomía, contamos con servicios exclusivos de excursiones.</p>
+                <p class="fontPalanquin m-3">No hay nada más lindo que sentarse en en una roca, frente al Río Nahuel Huapi y admirar las genialidades que la naturaleza nos dió. Si buscas respirar un aire totalmente puro, hacer trekking, andar en kayak o simplemente parar en miradores totalmente recomendados, ¡Bariloche es todo lo que buscas!, además de contar con increibles opciones de hospedaje y gastronomía, contamos con servicios exclusivos de excursiones.</p>
               </div>
         </section>
-        <section class="tarjetaCarrusel">
+        <section class="tarjetaCarrusel" data-aos="zoom-in">
             <h2 class="fontCairo">Opción en humedales</h2>
             <div id="carouselEsteros" class="carousel slide">
                 <div class="carousel-inner">
@@ -208,5 +209,9 @@
         </div>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     </body>
 </html>

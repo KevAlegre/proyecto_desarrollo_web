@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
         <link rel="icon" href="../favicon.ico">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     </head>
     <body class="contenidoPrincipal">
         <header class="fontCairo w-100 position-fixed">
@@ -34,12 +35,12 @@
         </header>
         <main>
             <h1 class="fontCairo bannerContacto text-center tituloPag sombraTexto">¿TENÉS ALGUNA DUDA? ¡NO TE OLVIDES DE HACÉRNOSLO SABER!</h1>
-            <section class="">
+            <section>
                 <section class="row m-0">
                     <div class="col-sm-12 col-md-7">
-                        <h2 class="text-center fondoForm tituloPag fontCairo">Recordá que estamos siempre a tu disposición, ¡que disfrutes tu viaje!</h2>
+                        <h2 class="text-center fondoForm tituloPag fontCairo" data-aos="zoom-in-up" data-aos-duration="700" data-aos-once="true">Recordá que estamos siempre a tu disposición, ¡que disfrutes tu viaje!</h2>
                     </div>
-                    <div class="col-sm-12 col-md-4 contenedorForm fontCairo">
+                    <div class="col-sm-12 col-md-4 contenedorForm fontCairo" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
                         <form action="" method="post" target="_self">
                             <fieldset>
                                 <legend>¿Cuál es el motivo de tu consulta?</legend>
@@ -160,5 +161,9 @@
             </div>
         </footer>
         <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
