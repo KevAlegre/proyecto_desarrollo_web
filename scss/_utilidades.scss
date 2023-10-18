@@ -8,9 +8,9 @@
     }
 }
 .pagActiva{
-    color: #007E66 !important;
+    color: #00a587 !important;
     &:hover{
-        color: #4D8075 !important;
+        color: #6cb9a8 !important;
     }
 }
 .sombraTexto{
@@ -35,5 +35,35 @@
     font-weight: 700;
     &:hover{
         color: rgb(160, 160, 160);
+    }
+}
+.bordeLinks{
+    border-bottom: none;
+    transition: border-bottom 1s ease, transform 0.5s ease;
+    &:hover{
+        transform: scale(1.05);
+        border-bottom: 1px solid map-get($mapa-colores , color-blanco );
+    }
+}
+.bordeLinksActivo{
+    border-bottom: none;
+    transition: border-bottom 1s ease, transform 0.5s ease;
+    &:hover{
+        transform: scale(1.05);
+        border-bottom: 1px solid #6cb9a8;
+    }
+}
+@media screen and (max-width:750px){
+    .bordeLinks{
+        &:hover{
+            transform: scale(1);
+            border-bottom: none;
+        }
+    }
+    .bordeLinksActivo{
+        &:hover{
+            transform: scale(1);
+            border-bottom: none;
+        }
     }
 }

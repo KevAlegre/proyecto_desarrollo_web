@@ -21,7 +21,7 @@
     display: inline-block
 }
 .iconRedes{
-    color: #fafafa;
+    color: map-get($mapa-colores , color-blanco );
 }
 .colorIconUbi{
     color: rgb(209, 0, 0);
