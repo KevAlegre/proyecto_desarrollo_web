@@ -88,6 +88,10 @@
   border-bottom: 1px solid #6cb9a8;
 }
 
+.negritas {
+  font-weight: 800;
+}
+
 @media screen and (max-width: 750px) {
   .bordeLinks:hover {
     transform: scale(1);
