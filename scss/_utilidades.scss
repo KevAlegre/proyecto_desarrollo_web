@@ -23,7 +23,7 @@
     background-color: #FEF6FF;
 }
 .fondoTarjetas{
-    background-color: #e7e5ec;
+    @include tarjeta(#e7e5ec);
     border-radius: 5px;
 }
 .senialador{
