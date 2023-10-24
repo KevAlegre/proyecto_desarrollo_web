@@ -309,6 +309,10 @@ header .logoHeader {
     margin-bottom: 10px;
   }
 }
+.img404 {
+  width: 225px;
+}
+
 .colorFooter {
   background-color: #0B0A9D;
 }
