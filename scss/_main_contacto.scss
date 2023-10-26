@@ -17,11 +17,26 @@
     border-radius: 15px;
 }
 .contenedorForm{
-    border: 1px solid rgb(220, 220, 220);
+    border: 1px solid rgba(220, 220, 220, 0.223);
     border-radius: 15px;
     background-color: #d5d5d524;
     margin-bottom: 10px;
     height: 655px;
+}
+.inpColor{
+    border: 1px solid rgba(220, 220, 220, 0.223);
+}
+.btEnviar{
+    background-color: rgb(183, 240, 243);
+    &:active{
+        background-color: rgb(144, 199, 203);;
+    }
+}
+.btLimpiar{
+    background-color: rgb(251, 198, 149);
+    &:active{
+        background-color: rgb(218, 166, 117);
+    }
 }
 @media screen and (max-width:750px){
     .bannerContacto{

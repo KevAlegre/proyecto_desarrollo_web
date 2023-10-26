@@ -32,12 +32,18 @@
 .letrasBlancas:hover {
   color: rgb(208, 208, 208) !important;
 }
+.letrasBlancas:active {
+  color: rgb(143, 143, 143) !important;
+}
 
 .pagActiva {
-  color: #00a587 !important;
+  color: #63d8c2 !important;
 }
 .pagActiva:hover {
-  color: #6cb9a8 !important;
+  color: #23c3a0 !important;
+}
+.pagActiva:active {
+  color: #319882 !important;
 }
 
 .sombraTexto {
@@ -136,7 +142,7 @@ header .logoHeader {
 
 .tarjeta {
   background-color: rgba(213, 213, 213, 0.1411764706);
-  border: 1px solid rgb(220, 220, 220);
+  border: 1px solid rgba(220, 220, 220, 0.223);
   border-radius: 10px;
   width: 75vw;
 }
@@ -154,7 +160,7 @@ header .logoHeader {
 }
 
 .opiniones {
-  border: 1px solid rgb(220, 220, 220);
+  border: 1px solid rgba(220, 220, 220, 0.223);
   background-color: rgba(213, 213, 213, 0.1411764706);
   border-radius: 20px;
 }
@@ -198,7 +204,7 @@ header .logoHeader {
 
 .tarjetaCarrusel {
   background-color: rgba(213, 213, 213, 0.1411764706);
-  border: 1px solid rgb(220, 220, 220);
+  border: 1px solid rgba(220, 220, 220, 0.223);
   border-radius: 15px;
   padding: 5px;
   width: 75%;
@@ -232,7 +238,7 @@ header .logoHeader {
 
 .tarjetaServ {
   background-color: rgba(213, 213, 213, 0.1411764706);
-  border: 1px solid rgb(220, 220, 220);
+  border: 1px solid rgba(220, 220, 220, 0.223);
   border-radius: 15px;
 }
 .tarjetaServ .imgServ {
@@ -285,11 +291,29 @@ header .logoHeader {
 }
 
 .contenedorForm {
-  border: 1px solid rgb(220, 220, 220);
+  border: 1px solid rgba(220, 220, 220, 0.223);
   border-radius: 15px;
   background-color: rgba(213, 213, 213, 0.1411764706);
   margin-bottom: 10px;
   height: 655px;
+}
+
+.inpColor {
+  border: 1px solid rgba(220, 220, 220, 0.223);
+}
+
+.btEnviar {
+  background-color: rgb(183, 240, 243);
+}
+.btEnviar:active {
+  background-color: rgb(144, 199, 203);
+}
+
+.btLimpiar {
+  background-color: rgb(251, 198, 149);
+}
+.btLimpiar:active {
+  background-color: rgb(218, 166, 117);
 }
 
 @media screen and (max-width: 750px) {
@@ -314,7 +338,7 @@ header .logoHeader {
 }
 
 .colorFooter {
-  background-color: #0B0A9D;
+  background-color: #42b1bd;
 }
 
 .bordeFooter {

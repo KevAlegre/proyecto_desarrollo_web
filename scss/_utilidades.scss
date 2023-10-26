@@ -6,11 +6,17 @@
     &:hover{
         color: rgb(208, 208, 208) !important;
     }
+    &:active{
+        color: rgb(143, 143, 143) !important;
+    }
 }
 .pagActiva{
-    color: #00a587 !important;
+    color: #63d8c2 !important;
     &:hover{
-        color: #6cb9a8 !important;
+        color: #23c3a0 !important;
+    }
+    &:active{
+        color: #319882 !important;
     }
 }
 .sombraTexto{
